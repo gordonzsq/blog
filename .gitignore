@@ -5,4 +5,3 @@ db.json
 node_modules/
 .deploy*/
 public/
-themes/next
