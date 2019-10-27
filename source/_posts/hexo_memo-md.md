@@ -14,8 +14,6 @@ Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 [Markdown](h
 
 简洁、快速，可以方便的部署在如github pages等地方
 
-（github pages限制： 1G空间、月100G流量等，非必要基本足够）
-
 ## 安装hexo所需环境
 
 [文档地址](https://hexo.io/zh-cn/docs/index.html)  （安装、使用等非常详细）
@@ -53,9 +51,9 @@ $ npm install
 #### 配置 修改 _config.yml (至少下面这些吧^-^,含义很好理解)
 
 ``` 文本
-theme: next     
-title: name    
-...    
+theme: next 
+title: name
+...
 language: zh-Hans
 timezone: Asia/Shanghai
 url:abc.com
