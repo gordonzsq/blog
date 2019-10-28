@@ -62,9 +62,26 @@ avatar:#显示头像的图片，图片放在主题source目录下的自定义路
 ```
 
 #### 额外的一些操作
-从github clone下来的主题需要删除原来的仓库，才能提交到hexo博客源码仓库，
+1 从github clone下来的主题需要删除原来的仓库，才能提交到hexo博客源码仓库，
 
 ```
 git rm -rf --cached themes/next
 git add themes/next
 ```
+2 页面显示的选项，以tags为例，需要创建相应的文件并指定type才可以正常显示
+```
+hexo new page "tags" #在source下创建tags目录以及index.md
+vi source/index.md
+
+#增加type字段，让你其他文档定义的tags可以在这里找到
+---
+title: tags
+date: 2019-10-27 19:49:04
+type: "tags"
+---
+
+```
+
+
+
+
