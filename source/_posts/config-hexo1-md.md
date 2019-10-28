@@ -3,8 +3,7 @@ title: 图片处理
 
 date: 2017-02-14 11:22:33
 tags: hexo-config
-
-categories: study
+categories: hexo
 ---
 
 ## hexo的图片处理

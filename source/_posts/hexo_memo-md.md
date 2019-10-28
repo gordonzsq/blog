@@ -2,8 +2,7 @@
 title: 搭建hexo笔记
 date: 2017-02-14 16:10:12
 tags: hexo-config
-
-categories: study
+categories: hexo
 ---
 ## 关于 Hexo？
 

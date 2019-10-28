@@ -1,9 +1,8 @@
 ---
 title: 手机电脑同步
 date: 2017-03-1 16:21:21
-tags: 工具
-
-categories: study
+tags: 手机电脑同步bittorrentsync
+categories: 同步工具
 ---
 
 这两天想把手机上的照片备份到电脑上，于是发现了一个这样的linux和iphone间方便、快速的传输神器--bittorrentSync。
