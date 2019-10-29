@@ -1,12 +1,12 @@
 ---
-title: travis0
+title: 初识travis CI
 date: 2019-10-25 11:18:28
-tags: get start
+tags: travis ci
 categories: travis ci
 
 ---
 
-### 持续集成服务部署Travis CI
+### 持续集成服务部署Travis CI 官方链接 
 
 ​	Travis CI 提供的是持续集成服务（Continuous Integration，简称 CI）。它绑定 Github 上面的项目，只要有新的代码，就会自动抓取。然后，提供一个运行环境，执行测试，完成构建，还能部署到服务器。
 
