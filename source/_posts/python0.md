@@ -8,6 +8,7 @@ categories: python
 ### 安装
 
 不同环境安装可参见[Python官方网站](https://www.python.org)
+<!--more-->
 
 基于debin的linux发行版下
 ```Shell
