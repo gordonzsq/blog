@@ -1,5 +1,5 @@
 ---
-title: 初识travis CI
+title: 初识travis CI (让hexo在github上持续集成)
 date: 2019-10-25 11:18:28
 tags: travis ci
 categories: travis ci
