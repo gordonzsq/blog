@@ -5,10 +5,11 @@ tags: python 基础笔记
 categories: python
 ---
 
+python 笔记，记录python不同于其它语言语法的一些内容和一些随笔
+<!--more-->
 ### 安装
 
 不同环境安装可参见[Python官方网站](https://www.python.org)
-<!--more-->
 
 基于debin的linux发行版下
 ```Shell
