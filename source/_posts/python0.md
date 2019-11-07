@@ -97,4 +97,55 @@ Python支持多种运算符，下表大致按照优先级从高到低的顺序�
 | `=` `+=` `-=` `*=` `/=` `%=` `//=` `**=` `&=` `|=` `^=` `>>=` `<<=` | （复合）赋值运算符             |
 
 
+### 内置函数
 
+官方链接[https://docs.python.org/zh-cn/3/library/functions.html](https://docs.python.org/zh-cn/3/library/functions.html)
+
+
+### 分支
+```Python
+if i == 1:
+    print('if 条件+冒号')
+elif i > 1:
+    print('elif 条件+冒号')
+else:
+    print('else+冒号')
+```
+
+### 循环
+```Python
+for x in range(2, 101, 2):
+    sum += x
+    
+while True:
+    if (i > 5):
+        break
+print('end 格式例子')
+```
+
+### 函数
+```Python
+def add(*args):
+    print('*args定义多个参数， def + 函数名 + （参数名）+冒号')
+    
+def add(arg1, arg2=1):
+    arg1 = arg2
+    global a    #定义全局变量关键字global
+    print('args can be default val')
+
+```
+
+    需要说明的是，如果我们导入的模块除了定义函数之外还中有可以执行代码，那么Python解释器在导入这个模块时就会执行这些代码，事实上我们可能并不希望如此，因此如果我们在模块中编写了执行代码，最好是将这些执行代码放入如下所示的条件中，这样的话除非直接运行该模块，if条件下的这些代码是不会执行的，因为只有直接执行的模块的名字才是"__main__"
+example.py
+如下 在import examle的时候便不会执行fun
+```Python
+
+def fun():
+    pass
+
+# __name__是Python中一个隐含的变量它代表了模块的名字
+# 只有被Python解释器直接执行的模块的名字才是__main__
+if __name__ == '__main__':
+    print('call fun()')
+    fun()
+```

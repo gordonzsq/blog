@@ -18,12 +18,54 @@ Travis CI 提供的是持续集成服务（Continuous Integration，简称 CI）
 
 ### 官方文档
 
-主页：https://travis-ci.com
+主页：[https://travis-ci.com](https://travis-ci.com)
 
-文档：https://docs.travis-ci.com
+文档：[https://docs.travis-ci.com](https://docs.travis-ci.com)
 
-github：https://github.com/travis-ci/
+github：[https://github.com/travis-ci/](https://github.com/travis-ci/)
 
+hexo 配置 travis：[https://hexo.io/zh-cn/docs/github-pages](https://hexo.io/zh-cn/docs/github-pages)
+
+### hexo 增加 travis ci说明
+
+    按如上官方文档配置时，其默认使用的是repository的gh_pages分支，github支持在gh_pages分支上部署项目主页，但是包含的主题有限，不包含博主使用的next主题，所以更改代码分支为dev分支，而页面分支github非支持的主题下仅能在master分支上构建。
+    
+附修改的travis配置文件 .travis.yml
+ 
+```
+language: node_js
+node_js: stable
+
+# S: Build Lifecycle
+install:
+  - npm install
+
+
+#before_script:
+ # - npm install -g gulp
+
+script:
+  - hexo g
+
+after_script:
+  - cd ./public
+  - git init
+  - git config user.name "gordonzsq"
+  - git config user.email "gordonzsq@sina.com"
+  - git add -A
+  - git commit -m "Update docs"
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+# E: Build LifeCycle
+
+branches:
+  only:
+    - dev
+env:
+ global:
+   - GH_REF: github.com/gordonzsq/gordonzsq.github.io.git
+
+```
+ 
 ### 一些中文说明
 
 最好最全的学习资料永远在官方文档，但对于初学者来说整理好的中文资料更便于快速理解

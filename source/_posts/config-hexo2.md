@@ -5,7 +5,6 @@ tags: hexo-config
 categories: hexo
 ---
 
-## next 主题基本配置
 https://hexo.io/themes/ 可以查看其他主题。 这里我主要说下NexT主题的相关配置。<!--more-->
 
 #### 安装主题

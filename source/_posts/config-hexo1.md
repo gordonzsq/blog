@@ -5,8 +5,6 @@ tags: hexo-config
 categories: hexo
 ---
 
-## hexo的图片处理
-
 关于图片的处理问题。
 
 <!--more-->
