@@ -28,7 +28,7 @@ hexo 配置 travis：[https://hexo.io/zh-cn/docs/github-pages](https://hexo.io/z
 
 ### hexo 增加 travis ci说明
 
-    按如上官方文档配置时，其默认使用的是repository的gh_pages分支，github支持在gh_pages分支上部署项目主页，但是包含的主题有限，不包含博主使用的next主题，所以更改代码分支为dev分支，而页面分支github非支持的主题下仅能在master分支上构建。
+按如上官方文档配置时，其默认使用的是repository的gh_pages分支，github支持在gh_pages分支上部署项目主页，但是包含的主题有限，不包含博主使用的next主题，所以更改代码分支为dev分支，而页面分支github非支持的主题下仅能在master分支上构建。
     
 附修改的travis配置文件 .travis.yml
  
