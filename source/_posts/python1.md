@@ -64,7 +64,7 @@ print(str2.isdigit())  # False
 print(str2.isalpha())  # False
 # 检查字符串是否以数字和字母构成
 print(str2.isalnum())  # True
-str3 = '  jackfrued@126.com '
+str3 = '  hello abc '
 print(str3)
 # 获得字符串修剪左右两侧空格之后的拷贝
 print(str3.strip())
