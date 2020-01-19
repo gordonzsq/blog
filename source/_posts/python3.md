@@ -43,7 +43,7 @@ if __name__ == '__main__':
 	
 ```
 ### 私有成员及访问
-python中使用双下划线__name方式定义私有（private）成员，且依然可以通过 _classname\__name方式访问私有成员。
+python中使用双下划线__name方式定义私有（private）成员，且依然可以通过 _classname\_\_name方式访问私有成员。
 ```Python
 class Test:
     def __init__(self, foo):
@@ -71,7 +71,7 @@ if __name__ == "__main__":
 ```
 
 
-### 使用__slots__
+### 使用\__slots__
 如果我们想要限制实例的属性，比如student实例只允许添加name和age属性。
 ```Python
 class student(object):
@@ -85,8 +85,8 @@ class student(object):
 	__repr__=__str__
 	...
 ```
-使用__slots__要注意，__slots__定义的属性仅对当前类实例起作用，对继承的子类是不起作用的。
- __str__返回用户看到的字符串，__repr__返回开发者看到的字符串，当打印实例信息时调用该函数
+使用\__slots__ 要注意，\__slots__定义的属性仅对当前类实例起作用，对继承的子类是不起作用的。
+\__str__ 返回用户看到的字符串，\__repr__返回开发者看到的字符串，当打印实例信息时调用该函数
 ```Python
  >>> s = Student('bb')
  >>> s                    #调用__repr__
@@ -95,7 +95,7 @@ class student(object):
  
 ### 使用__iter__，\__next__
 
-如果一个类想被用于for ... in循环，类似list或tuple那样，就必须实现一个__iter__()方法，该方法返回一个迭代对象，然后，Python的for循环就会不断调用该迭代对象的__next__()方法拿到循环的下一个值，直到遇到StopIteration错误时退出循环。
+如果一个类想被用于for ... in循环，类似list或tuple那样，就必须实现一个\__iter__ ()方法，该方法返回一个迭代对象，然后，Python的for循环就会不断调用该迭代对象的\__next__ ()方法拿到循环的下一个值，直到遇到StopIteration错误时退出循环。
 
 我们以斐波那契数列为例，写一个Fib类，可以作用于for循环：
 ```
@@ -142,4 +142,4 @@ Hello = type('Hello', (object,), dict(hello=fn)) # 创建Hello class
 2. 继承的父类集合，注意Python支持多重继承，如果只有一个父类，别忘了tuple的单元素写法；
 3. class的方法名称与函数绑定，这里我们把函数fn绑定到方法名hello上。
 
-使用type()可以让python动态创建类，配合metaclass，但这种使用方式个人觉得代码可读性不好，对这种使用方式了解能看懂即可，不建议较多使用。
+使用type()可以让python动态创建类，配合metaclass，但这种使用方式个人觉得代码可读性不好，对这种使用方式能看懂即可，不建议较多使用。
