@@ -1,7 +1,7 @@
 ---
 title: windows开发环境记录
 date: 2020-02-17 08:53:06
-tags:software
+tags: software
 categories: windows
 ---
 windows下搭建python开发环境用到的一些记录。
