@@ -90,7 +90,7 @@ windows下文件拷贝到linux下文件乱码问题：
 ```
 iconv -f GB2312 -t UTF-8 somefile.md -o somefile.md
 ```
-windows下无法访问github问题（应该是仅DNS不解析，具体原因不清楚，墙的话，修改hosts是不会好用的哦
+windows下无法访问github问题（直接ping github地址会是52.74.223.119类似的地址，无法访问哦
 修改Windows/System32/drivers/etc/hosts， 增加
 ```
 192.30.253.112 github.com
